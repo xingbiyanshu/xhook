@@ -20,5 +20,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "xhook"
-include(":app")
+//include(":app")
 include(":xhook")

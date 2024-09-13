@@ -1,6 +1,7 @@
 plugins {
-    alias(libs.plugins.android.library)
-    alias(libs.plugins.jetbrains.kotlin.android)
+//    alias(libs.plugins.android.library)
+//    id("maven-publish")
+    id("com.android.library")
     id("maven-publish")
 }
 
@@ -8,8 +9,11 @@ android {
     namespace = "com.sissi.lib.xhook"
     compileSdk = 34
 
+    ndkVersion = "23.1.7779620" // koom使用的版本，它的agp7.1.0
+//    ndkVersion = "26.1.10909125"
+
     defaultConfig {
-        minSdk = 24
+        minSdk = 18
 
         consumerProguardFiles("consumer-rules.pro")
         externalNativeBuild {
