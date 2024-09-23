@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.sissi.lib.xhook"
+    namespace = "com.sissi.hook.xhook"
     compileSdk = 34
 
     ndkVersion = "23.1.7779620" // koom使用的版本，它的agp7.1.0
@@ -58,7 +58,7 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.sissi.lab"
+            groupId = "com.sissi.hook"
             artifactId = "xhook"
             version = "1.0"
 
